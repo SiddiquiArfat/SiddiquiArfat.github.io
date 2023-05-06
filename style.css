@@ -1,10 +1,7 @@
 .nav-menu {
     background-color: #101820;
-    
     display: flex;
-    justify-content: right;
     height: 50px;
-    
     padding: 10px;
     position: fixed;
     top: 0;
@@ -57,7 +54,7 @@
   }
   
   .resume-btn:hover {
-    background-color: #fff;
+    /* background-color: #fff; */
     color: #333;
   } 
   
@@ -163,12 +160,13 @@
   
   .navbar-toggle {
     display: none;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    position: relative;
-    z-index: 1100;
+  background: transparent;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  z-index: 1100;
   }
   
   .navbar-toggle:focus {
@@ -182,7 +180,7 @@
     content: "";
     display: block;
     height: 3px;
-    width: 25px;
+    width: 35px;
     position: absolute;
     left: 0;
     transition: all 0.3s ease-in-out;
@@ -196,30 +194,74 @@
     top: 8px;
   }
 
-  
-  
-  @media (max-width: 842px) {
-    .navbar-toggle {
-      display: block;
+
+    /* Animation for hamburger menu */
+    .navbar-toggle.active .navbar-toggle-icon:before {
+      top: 0;
+      transform: rotate(45deg);
     }
-    .navbar-menu {
-      position: absolute;
-      top: 60px;
-      right: -100%;
-      width: 100%;
-      background-color: #000000;
-      transition: all 0.3s ease-in-out;
+    
+    .navbar-toggle.active .navbar-toggle-icon {
+      transform: rotate(45deg);
     }
-    .navbar-menu.show {
-      right: 0;
+    
+    .navbar-toggle.active .navbar-toggle-icon:after {
+      top: 0;
+      transform: rotate(-45deg);
     }
-    .navbar-menu li {
-      margin: 10px 0;
-      text-align: center;
-    }
-    .navbar-brand {
-      margin: 0;
-      text-align: center;
-    }
+
+
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
+  
+  .navbar-menu li {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #ffd700;
+  }
+
+
+  
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-menu {
+    position: absolute;
+    top: 60px;
+    right: 100%;
+    width: 100%;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar-menu.show {
+    right: 0;
+  }
+  .navbar-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .navbar-brand {
+    margin: 0;
+    text-align: center;
+  }
+}
   
