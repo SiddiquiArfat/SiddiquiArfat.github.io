@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +22,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Sigmar&display=swap" rel="stylesheet">
 
 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <section class="nav-menu" id="nav-menu">
@@ -29,7 +38,9 @@
         <span class="navbar-toggle-icon"></span>
       </button>
 
-       <img src="./onlinelogomaker-050323-2044-8958.png" alt="">
+       <!-- <img src="./onlinelogomaker-051823-1202-8132.png" alt=""> -->
+
+       <span id="nameheading">Siddiqui Arfat</span>
 
     <ul class="navbar-menu">
       <li class="nav-link home" ><a href="#home">Home</a> </li>
@@ -37,23 +48,35 @@
       <li class="nav-link projects"><a href="#projects">Project</a> </li>
       <li class="nav-link skills"><a href="#skills">Skills</a> </li>
       <li class="nav-link contact"><a href="#contact">Contact</a> </li>
-    <li class="nav-link resume"><a href="#" class="resume-btn"  id="resume-button-1"><i class="fa fa-cloud-download" style="font-size:24px"></i> Download Resume</a></li>
+    <li class="nav-link resume"><a href="#" class="resume-btn"  id="resume-button-1"><i class="fa fa-download" style="font-size:20px"></i></i> Resume</a></li>
   </ul>
     </section>
 
 
 <section id="home">
+  <div>
   <h1 class="name" id="user-detail-name">Hi, I'm <br><span> Arfat Siddiqui</span><br>Full Stack Web Developer</h1>
-  <button id="resume-download" id = "resume-button-2">Resume</button>
+
+  <button id="resume-download"  id = "resume-button-2" >Resume</button>
+</div>
+
+
+  <div> 
+
+    <img src="https://sithcomputers.com/wp-content/uploads/2021/02/Full-Stack-Developer-1.gif" alt="">
+
+  </div>
+
+
 </section>
 
-
+<!--  -->
 
 <section id="about" class="about section">
     <span id="heading"><h1>ABOUT ME</h1></span>
 
     <div class="aboutdetails" id="user-detail-intro">
-      <div>
+      <div class = "self">
       <h3>Aspiring Java Developer with a strong track
       record of developing and delivering software
       applications that prioritize user experiences. I
@@ -64,7 +87,14 @@
       skills as a Java Developer.</h3>
       </a><button id="resume-download"><a href="#home">Contact Me</a></button>
     </div>
-      <img class="home-img" src="./1681999579812.jpg" alt="">
+
+
+    
+      <img id="image-wrapper" class="home-img" src="./1681999579812.jpg" alt="" >
+    
+    
+    
+
   </div>
 
 </section>
@@ -73,62 +103,114 @@
   <span id="heading"><h1>SKILLS</h1></span>
   <div class="skills-card">
 
-    <div class="skills-card-img">
+    <div class="skills-card-img" id="image-wrapper">
       
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
     
-      <h4 class="skills-card-name">HTML5</h4>
+      <h4 class="skills-card-name"></h4>
+    </div>
+    
+
+
+    <div class="skills-card-img" id="image-wrapper">
+      
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
+        
+      <h4 class="skills-card-name"></h4>
+   
+    </div>
+    <div class="skills-card-img" id="image-wrapper">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">
+      <h4 class="skills-card-name"></h4>
     </div>
 
-    <div class="skills-card-img">
-     
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
-    
-      <h4 class="skills-card-name">CSS3</h4>
-    </div>
-    <div class="skills-card-img">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">
-      <h4 class="skills-card-name">JavaScript</h4>
-    </div>
-    <div class="skills-card-img">
+    <div class="skills-card-img" id="image-wrapper">
       
       <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="">
+      
     
-      <h4 class="skills-card-name">Java</h4>
+      <h4 class="skills-card-name"></h4>
+ 
     </div>
-    <div class="skills-card-img">
+    <div class="skills-card-img" id="image-wrapper">
       <img src="https://www.vectorlogo.zone/logos/hibernate/hibernate-ar21.svg" alt="">
-      <h4 class="skills-card-name">Hibernet</h4>
+      <h4 class="skills-card-name"></h4>
     </div>
-    <div class="skills-card-img">
+    <div class="skills-card-img" id="image-wrapper">
       <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="">
-      <h4 class="skills-card-name">SQL</h4>
+      <h4 class="skills-card-name"></h4>
     </div>  
-      <div class="skills-card-img">
+      <div class="skills-card-img" id="image-wrapper">
         <img src="https://www.vectorlogo.zone/logos/springio/springio-ar21.svg" alt="">
-        <h4 class="skills-card-name">Spring Boot</h4>
+        <h4 class="skills-card-name"></h4>
     </div>
 
-    <div class="skills-card-img">
+    <div class="skills-card-img" id="image-wrapper">
       
       <img src="https://www.vectorlogo.zone/logos/github/github-ar21.svg" alt="">
     
-      <h4 class="skills-card-name">Github</h4>
+      <h4 class="skills-card-name"></h4>
   </div>
 
+  <div class="skills-card-img" id="image-wrapper">
+      
+    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" alt="">
+  
+    <h4 class="skills-card-name"></h4>
+</div>
+
 </section>
+
+
+
 
 <section id="projects">
 
 </section>
 
 
-<section id="contact">
-  
 
+
+<section id="contact">
+
+
+  <div class="contact-section">
+    <span id="heading"><h1>CONTACT ME</h1></span>
+    <ul class="contact-list">
+      <li class="contact-item">
+        <a href="https://www.linkedin.com/in/arfat-siddiqui-431218205/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
+      </li>
+      <li class="contact-item">
+        <a href="https://github.com/SiddiquiArfat" target="_blank">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+      </li>
+      <li class="contact-item">
+        <a href="mailto:arfatsiddiqui070@gmail.com">
+          <i class="far fa-envelope"></i>
+          arfatsiddiqui070@gmail.com
+        </a>
+      </li>
+      <li class="contact-item">
+        <a href="tel:+8669295926">
+          <i class="fas fa-phone"></i>
+          +91 8669295926
+        </a>
+      </li>
+    </ul>
+  </div>
 
 
 </section>
+
+
+
+
+
 
 
 </body>
