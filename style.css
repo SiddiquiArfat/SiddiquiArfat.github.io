@@ -210,7 +210,7 @@ body{
   border-radius: 25px;
   /* font-weight: bold; */
   font-size: 20px;
-  border: 2px solid #2f3542;
+  border: 1px solid #2f3542;
   background: transparent;
   /* color: #039BE5; */
   color: #2f3542;;
@@ -231,6 +231,7 @@ body{
 }
 #resume-download:hover{
   color: #fff;
+  border: none;
 }
 button:hover span {
   width: 101%;
@@ -238,7 +239,6 @@ button:hover span {
 }
 button:hover {
   border: none;
-  
 }
 
 
