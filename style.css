@@ -437,7 +437,7 @@ section{
 
 /* calender */
 :root {
-  --color-calendar-graph-day-bg: #7c7070;
+  --color-calendar-graph-day-bg: #4f4f4f;
   --color-calendar-graph-day-L1-bg: #39dd34;
   --color-calendar-graph-day-L2-bg: #45a045;
   --color-calendar-graph-day-L3-bg: #047526;
@@ -465,9 +465,16 @@ rect.ContributionCalendar-day[data-level='4'] {
 }
 
 .Github-calendar{
-  width: 70%;
+  width: 100%;
   margin: auto;
   margin-top: 100px;
+  color: #000000;
+}
+.calendar{
+  width: 100%;
+  
+  margin-top: 100px;
+  color: #000000;
 }
 .stat div{
   display: grid;
@@ -680,16 +687,22 @@ rect.ContributionCalendar-day[data-level='4'] {
   grid-template-columns: repeat(2,1fr);
 }
 
+.calendar{
+  width: 100%;
+  color: #000000;
+}
+
 #contact{
   width: 100%;
-
 }
 #contact li{
   margin: 10px 0;
-  
   font-size: 80%;
-  text-align: center;
-  
+  text-align: center; 
 }
 
+}
+
+.none{
+  display: none;
 }

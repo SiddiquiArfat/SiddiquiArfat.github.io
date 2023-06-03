@@ -26,5 +26,18 @@ var typed = new Typed(".typing", {
 });
 
 
+GitHubCalendar(".calendar", "SiddiquiArfat");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "SiddiquiArfat", { responsive: true });
+
+    // Use a proxy
+    // GitHubCalendar(".calendar", "SiddiquiArfat", {
+    //    proxy (username) {
+    //      return fetch(`https://your-proxy.com/github?user=${username}`)
+    //    }
+    // }).then(r => r.text())
+
+
 
 
