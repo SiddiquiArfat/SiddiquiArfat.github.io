@@ -6,8 +6,6 @@ barContainer.addEventListener("click",function(){
 });
 
 function resume(){
-
-
   window.open("https://drive.google.com/file/d/1ehH9Z1omTLvDYQbY6X-KHOBq1KgLusuV/view?usp=sharing");
 }
 
