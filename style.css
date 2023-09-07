@@ -1,6 +1,58 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
+/*Independed components*/
+.btn-con {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutdetails h3 .main-btn {
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid gray;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.aboutdetails h3 .main-btn .btn-text {
+  text-align: center;
+  padding: 0 2rem;
+}
+.aboutdetails h3 .main-btn .btn-icon {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.aboutdetails h3 .main-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.4s ease-out;
+  z-index: -1;
+}
+.aboutdetails h3 .main-btn:hover {
+  transition: all 0.4s ease-out;
+}
+.aboutdetails h3 .main-btn:hover::before {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  transform: translateX(0);
+  transition: all 0.4s ease-out;
+}
+
+
 
 
 body{
@@ -286,6 +338,7 @@ button:hover {
 .aboutdetails img{
   width: 300px;
   border-radius: 50px;
+  height: 300px;
 }
 
 
@@ -504,6 +557,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 .project-card{
   width: 90%;
+  height: 400px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   padding: 20px;
   margin: auto;
@@ -518,21 +572,25 @@ rect.ContributionCalendar-day[data-level='4'] {
 .source{
   padding: 10px;
   font-size: 20px;
+  border-radius: 20px;
+  
 }
 
 .source:hover{
-  background-color: #a4b0be;
-  color: #fff;
+  background-color: #2f3542;
   transition: 0.3s ease-in-out;
 }
 
 .source a{
   text-decoration: none;
+  border-radius: 100px;
 }
 .btn{
   padding: 30px;
   display: flex;
   justify-content: space-between;
+  /* justify-content: end; */
+  align-items: end;
 }
 .container{
   display: grid;
@@ -609,7 +667,9 @@ rect.ContributionCalendar-day[data-level='4'] {
     margin: auto;
   }
   .aboutdetails img{
-    width: 50%;
+    /* width: 50%; */
+    width: 300px;
+    height: 200px;
     margin: auto;
     margin-top: 20px;
   }

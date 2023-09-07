@@ -6,7 +6,7 @@ barContainer.addEventListener("click",function(){
 });
 
 function resume(){
-  window.open("https://drive.google.com/file/d/1ehH9Z1omTLvDYQbY6X-KHOBq1KgLusuV/view?usp=sharing");
+  window.open("https://drive.google.com/file/d/1y_ql2btuZ3oOXofu0g6Ac8H3N-L2kt2_/view?usp=sharing");
 }
 
 let timeout;
